@@ -87,7 +87,6 @@ func run(args *selpg_Args) {
 		fin, err = os.Open(args.inputType)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "ERROR: Can't find input file \"%s\"!\n", args.inputType)
-			//fmt.Println(err)
 			usage()
 			os.Exit(1)
 		}
